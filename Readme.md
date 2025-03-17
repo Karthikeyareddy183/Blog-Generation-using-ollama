@@ -41,8 +41,8 @@ Run the following command to download the gemma:2b model:
 
 bash
 
-```ollama pull gemma:2b
-
+```
+ollama pull gemma:2b
 ```
 
 ### Step 3: Install Required Libraries
@@ -85,10 +85,12 @@ streamlit run app.py
 
 ## Project Structure
 
+```
 Blog-Generation-using-ollama/
 ├── app.py # Main Streamlit app code
 ├── README.md # Project documentation
 └── requirements.txt # List of dependencies
+```
 
 ## License
 
