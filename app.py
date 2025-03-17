@@ -19,6 +19,7 @@ st.write("Enter a blog topic, and the system will generate a well-structured blo
 # Initialize Ollama LLM
 
 
+
 def initialize_llm(model_name="gemma:2b"):
     try:
         llm = Ollama(model=model_name)
