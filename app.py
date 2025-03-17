@@ -17,7 +17,7 @@ st.title("Blog Generation System")
 st.write("Enter a blog topic, and the system will generate a well-structured blog for you!")
 
 # Initialize Ollama LLM
-#game
+
 
 
 def initialize_llm(model_name="gemma:2b"):
