@@ -1,30 +1,31 @@
-# Blog Generation System
+# Blog Generation using Ollama
 
 ## Overview
 
 This project is a Blog Generation System that utilizes Streamlit and Ollama to generate blog content based on user input. It leverages the gemma:2b model and external resources like Wikipedia and DuckDuckGo search to enhance content generation.
 
+## _Features_
 
-## *Features*
-- *Blog Generation*: Generates a blog with the following sections:
+- _Blog Generation_: Generates a blog with the following sections:
   - Heading
   - Introduction
   - Content
   - Summary
-- *Research Tools*: Uses DuckDuckGo Search and Wikipedia to gather information.
-- *Streamlit Interface*: Provides a simple web interface for users to input a topic and view the generated blog.
-- *Download Option*: Allows users to download the generated blog as a .txt file.
+- _Research Tools_: Uses DuckDuckGo Search and Wikipedia to gather information.
+- _Streamlit Interface_: Provides a simple web interface for users to input a topic and view the generated blog.
+- _Download Option_: Allows users to download the generated blog as a .txt file.
 
 ---
 
-## *Requirements*
+## _Requirements_
+
 To run this project, you need the following:
 
-1. *Python 3.8 or later*
-2. *Ollama*: A lightweight framework for running large language models locally.
-3. *Streamlit*: For the web interface.
-4. *LangChain*: For integrating the language model and tools.
-5. *Additional Libraries*: duckduckgo-search, wikipedia-api, etc.
+1. _Python 3.8 or later_
+2. _Ollama_: A lightweight framework for running large language models locally.
+3. _Streamlit_: For the web interface.
+4. _LangChain_: For integrating the language model and tools.
+5. _Additional Libraries_: duckduckgo-search, wikipedia-api, etc.
 
 ---
 
@@ -39,16 +40,20 @@ Download and install Ollama from the official website: [Ollama](https://ollama.c
 Run the following command to download the gemma:2b model:
 
 bash
-ollama pull gemma:2b
 
+```ollama pull gemma:2b
+
+```
 
 ### Step 3: Install Required Libraries
 
 Install the necessary Python dependencies using pip:
 
 bash
-pip install streamlit langchain langchain-community duckduckgo-search wikipedia-api
 
+```
+pip install streamlit langchain langchain-community duckduckgo-search wikipedia-api
+```
 
 ## Running the Project
 
@@ -57,31 +62,33 @@ pip install streamlit langchain langchain-community duckduckgo-search wikipedia-
 Ensure the Ollama server is running in the background before launching the application:
 
 bash
-ollama serve
 
+```
+ollama serve
+```
 
 ### Run the Streamlit App
 
 Navigate to the project directory and run the Streamlit app using:
 
 bash
-streamlit run blog_generator_app.py
 
+```
+streamlit run app.py
+```
 
 ### Use the App
 
 1. Open the URL displayed in the terminal (usually [http://localhost:8501](http://localhost:8501)).
-2. Enter a blog topic in the input field and click *Generate Blog*.
-3. View the generated blog and download it using the *Download Blog* button.
+2. Enter a blog topic in the input field and click _Generate Blog_.
+3. View the generated blog and download it using the _Download Blog_ button.
 
 ## Project Structure
 
-
-blog-generation-system/
-├── blog_generator_app.py       # Main Streamlit app code
-├── README.md                   # Project documentation
-└── requirements.txt            # List of dependencies
-
+Blog-Generation-using-ollama/
+├── app.py # Main Streamlit app code
+├── README.md # Project documentation
+└── requirements.txt # List of dependencies
 
 ## License
 
